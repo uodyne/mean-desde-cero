@@ -29,3 +29,4 @@
 
 - Instalar dependencias de Bower. Vale, es absurdo porque no hay dependencias. Pero probadlo para asegurarse que no da error y cuando lo necesitemos no tengamos problemas de última hora. Es recomendable dejar toda la estructura preparada antes de comenzar a meter código como cosacos.
 
+- Creamos el servidor con Express y probamos con "node server.js".

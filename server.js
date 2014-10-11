@@ -22,5 +22,8 @@ app.configure(function() {
 
 });
 
+// Express Routes
+require('./app/routes/routes')(app);
+
 // Iniciamos servidor en puerto 3000
 app.listen(3000);
