@@ -25,3 +25,7 @@
 
 - Creamos package.json definiendo las dependencias de nuestro stack MEAN necesarias. Express, Mongoose, Request, y Bower para las posteriores dependencias del frontend. También se le indica la versión de node que debe ejecutar, la ruta del repositorio, y el script que debe ejecutar tanto al inicio del servidor como en el post-install. Tanto esto último como "engines" es para que Heroku sepa qué debe hacer.
 
+- Instalamos todas las dependencias de node, mediante; "npm install" en la línea de comandos dentro del directorio raiz del proyecto (/mean-desde-cero/). Revisar que dentro de node_modules se encuentran los módulos: bower,express,mongoose y request.
+
+- Instalar dependencias de Bower. Vale, es absurdo porque no hay dependencias. Pero probadlo para asegurarse que no da error y cuando lo necesitemos no tengamos problemas de última hora. Es recomendable dejar toda la estructura preparada antes de comenzar a meter código como cosacos.
+
