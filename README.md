@@ -21,3 +21,5 @@
 
     Más adelante se creará una estructura más ámplia para las fábricas, servicios, routes,... de AngularJS.
 
+- Creación de fichero de configuración de Bower. Bower es un proyecto open-source salido de Twitter. Funciona de forma parecida a NPM en Node.js. En un fichero JSON anotamos las librerías que necesitamos y con un simple comando se nos descargarán en el directorio que queramos de nuestra aplicación.
+

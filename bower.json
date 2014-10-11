@@ -1,0 +1,10 @@
+{
+    "name": "mean-desde-cero",
+    "description": "Mean desde cero",
+    "version": "0.0.1",
+    "homepage": "https://github.com/uodyne/mean-desde-cero",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+    }
+}
