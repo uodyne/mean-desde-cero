@@ -35,3 +35,5 @@
 
 - Creamos una API Rest JSON muy básica para comenzar a utilizar
 
+- Añadimos los módulos de AngularJS con Bower.
+
