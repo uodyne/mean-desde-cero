@@ -5,6 +5,8 @@ var mongoose = require('mongoose');
 // Configuraciones
 var db = require('./config/db');
 
+// Connect to the DB
+mongoose.connect(db.url);
 
 // Servidor Express
 var app = express();
