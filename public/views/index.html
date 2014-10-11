@@ -11,7 +11,21 @@
 </head>
 <body>
 <div ng-controller="mainCtrl">
-    Hola mundo, con estilo. 1+1 = {{1+1}}
+    <p>Número total de tareas: **NUM_TAREAS**</p>
+
+    <h2>Listado de tareas</h2>
+    <div ng-repeat="model in models">
+        <p>
+            <span ng-click="deleteModel(model._id)">Borrar</span>
+            {{model.name}}
+        </p>
+    </div>
+
+    <h2>Formulario de inserción</h2>
+    <form name="modelCreate">
+        <p><input type="text" name="name" ng-model="formData.name" required /></p>
+        <p><button type="submit" ng-click="submitted=true">Añadir</button></p>
+    </form>
 </div>
 
 </body>
