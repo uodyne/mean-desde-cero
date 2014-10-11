@@ -1,0 +1,8 @@
+# Dependencias de NodeJS
+node_modules
+
+# Directorio de proyecto de WebStorm
+.idea
+
+# OS X
+.DS_Store
