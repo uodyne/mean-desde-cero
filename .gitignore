@@ -1,6 +1,9 @@
 # Dependencias de NodeJS
 node_modules
 
+# Dependencias de Bower
+public/components
+
 # Directorio de proyecto de WebStorm
 .idea
 
