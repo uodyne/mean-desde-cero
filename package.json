@@ -1,0 +1,24 @@
+{
+    "name"         : "mean-desde-cero",
+    "version"      : "0.0.1",
+    "description"  : "Mean desde cero",
+    "main"         : "server.js",
+    "scripts": {
+        "postinstall": "./node_modules/bower/bin/bower install",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/uodyne/mean-desde-cero"
+    },
+    "dependencies" : {
+        "bower"      : "1.3.x",
+        "express"    : "~3.4.4",
+        "mongoose"	 : "3.8.x",
+        "request"	 : "2.36.0"
+    },
+    "engines": {
+        "node": "0.10.28"
+    },
+    "author": "uodyne"
+}

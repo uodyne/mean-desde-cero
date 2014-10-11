@@ -23,3 +23,5 @@
 
 - Creación de fichero de configuración de Bower. Bower es un proyecto open-source salido de Twitter. Funciona de forma parecida a NPM en Node.js. En un fichero JSON anotamos las librerías que necesitamos y con un simple comando se nos descargarán en el directorio que queramos de nuestra aplicación.
 
+- Creamos package.json definiendo las dependencias de nuestro stack MEAN necesarias. Express, Mongoose, Request, y Bower para las posteriores dependencias del frontend. También se le indica la versión de node que debe ejecutar, la ruta del repositorio, y el script que debe ejecutar tanto al inicio del servidor como en el post-install. Tanto esto último como "engines" es para que Heroku sepa qué debe hacer.
+
