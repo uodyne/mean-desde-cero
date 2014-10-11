@@ -11,7 +11,7 @@
 </head>
 <body>
 <div ng-controller="mainCtrl">
-    <p>Número total de tareas: **NUM_TAREAS**</p>
+    <p>Número total de tareas: {{models.length}}</p>
 
     <h2>Listado de tareas</h2>
     <div ng-repeat="model in models">
@@ -22,9 +22,14 @@
     </div>
 
     <h2>Formulario de inserción</h2>
-    <form name="modelCreate">
+    <form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
         <p><input type="text" name="name" ng-model="formData.name" required /></p>
         <p><button type="submit" ng-click="submitted=true">Añadir</button></p>
+        <div ng-show="submitted && modelCreate.name.$invalid">
+            <p ng-show="modelCreate.name.$error.required">
+                ERROR: La tarea es requerida para añadir tarea :?
+            </p>
+        </div>
     </form>
 </div>
 
