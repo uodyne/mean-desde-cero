@@ -25,6 +25,7 @@ app.configure(function() {
 });
 
 // Express Routes
+require('./app/routes/api')(app);
 require('./app/routes/routes')(app);
 
 // Iniciamos servidor en puerto 3000
