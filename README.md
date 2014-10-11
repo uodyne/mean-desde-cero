@@ -33,3 +33,5 @@
 
 - Definimos el Schema de la tabla de MongoDB
 
+- Creamos una API Rest JSON muy básica para comenzar a utilizar
+
