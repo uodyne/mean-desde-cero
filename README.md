@@ -37,3 +37,5 @@
 
 - Añadimos los módulos de AngularJS con Bower.
 
+- Damos funcionalidad y la finalizamos.
+
