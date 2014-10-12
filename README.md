@@ -39,3 +39,7 @@
 
 - Damos funcionalidad y la finalizamos.
 
+- En el commit anterior, cambiamos la definición del puerto para que heroku pueda ejecutar la aplicación.
+
+- Damos formato frontend con Bootstrap de base.
+

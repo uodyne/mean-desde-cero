@@ -9,29 +9,52 @@
     <script src="../components/angular/angular.min.js"></script>
     <script type="text/javascript" src="../controllers/app.js"></script>
 </head>
-<body>
-<div ng-controller="mainCtrl">
-    <p>Número total de tareas: {{models.length}}</p>
-
-    <h2>Listado de tareas</h2>
-    <div ng-repeat="model in models">
-        <p>
-            <span ng-click="deleteModel(model._id)">Borrar</span>
-            {{model.name}}
-        </p>
+<body ng-controller="appCtrl">
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Tareas <span class="label label-info">{{ models.length }}</span></h1>
     </div>
 
-    <h2>Formulario de inserción</h2>
-    <form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
-        <p><input type="text" name="name" ng-model="formData.name" required /></p>
-        <p><button type="submit" ng-click="submitted=true">Añadir</button></p>
-        <div ng-show="submitted && modelCreate.name.$invalid">
-            <p ng-show="modelCreate.name.$error.required">
-                ERROR: La tarea es requerida para añadir tarea :?
-            </p>
-        </div>
-    </form>
-</div>
+    <div id="model-list" class="row">
+        <div class="col-sm-4 col-sm-offset-4">
 
+            <div ng-repeat="model in models" class="model-item">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-addon">
+                        <div class="glyphicon glyphicon-remove" ng-click="deleteModel(model._id)">
+                        </div>
+                    </div>
+
+                    <div type="text" class="form-control"> {{model.name}}</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="model-form" class="form-horizontal">
+        <div class="col-sm-8 col-sm-offset-2 text-center" id="name-field">
+
+            <form name="modelCreate" ng-submit="modelCreate.$valid && submitted && createModel()" novalidate>
+                <div class="form-group" ng-class="{'has-error': submitted && modelCreate.name.$invalid}">
+
+                    <div class="col-sm-12">
+                        <input type="name" name="name"  class="form-control input-lg text-center" placeholder="Model" ng-model="formData.name" required />
+
+                        <div ng-show="submitted && modelCreate.name.$invalid">
+                            <p ng-show="modelCreate.name.$error.required">
+                                ERROR: La tarea es requerida para añadir tarea :?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg" ng-click="submitted=true">
+                    Añadir
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>
