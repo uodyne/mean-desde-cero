@@ -1,11 +1,13 @@
+<div ng-hide="!todoLoading" class="loading-api">Cargando tareas...</div>
 
-<div class="container"  ng-controller="todoCtrl">
+<div class="container"  ng-show="!todoLoading" ng-controller="todoCtrl">
     <div class="jumbotron text-center">
         <h1>Tareas <span class="label label-info">{{ models.length }}</span></h1>
     </div>
 
     <div id="model-list" class="row">
         <div class="col-sm-4 col-sm-offset-4">
+
 
             <div ng-repeat="model in models" class="model-item">
                 <div class="input-group input-group-lg">

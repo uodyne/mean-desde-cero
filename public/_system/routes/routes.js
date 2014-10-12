@@ -7,8 +7,8 @@ app.config(function($routeSegmentProvider, $routeProvider) {
     $routeSegmentProvider
         .when('/home',          'home')
         .segment('home', {
-            templateUrl: '_system/views/home.html',
-            controller: 'mainCtrl'})
+            templateUrl: 'home/views/home.html',
+            controller: 'homeCtrl'})
 
     // Todos
     $routeSegmentProvider

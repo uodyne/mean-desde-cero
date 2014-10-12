@@ -1,11 +1,14 @@
 app.controller('todoCtrl', function mainCtrl($scope, $http) {
 
+    $scope.todoLoading = true;
+
     $scope.formData = {};
 
     $http.get('/models')
         .success(function(data) {
             $scope.models = data;
             console.log(data);
+            $scope.todoLoading = false;
         })
         .error(function(data) {
             console.log("Error: " + data);
