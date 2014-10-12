@@ -1,5 +1,54 @@
 # MEAN desde cero
 
+## Demo
+http://stark-wave-6307.herokuapp.com/
+
+## Instalación
+```sh
+git clone git@github.com:uodyne/baseMean.git myApp
+cd myApp
+npm install & bower install
+```
+## Run
+```sh
+npm start
+```
+La aplicación estará corriendo en [localhost:3000](http://localhost:3000/).
+
+## Deploy en Heroku
+
+Instala, si no lo tienes:[Heroku Toolbelt](https://toolbelt.heroku.com/).
+
+```sh
+heroku create
+git push heroku master
+heroku open
+```
+Para hacer deploy a una app existente, en lugar de create puedes hacer:
+
+```sh
+heroku git:remote -a ***name-app-heroku***
+```
+
+Si tienes ya alguna configuración de heroku sobre esta app, puedes eliminarla:
+
+```sh
+git remote rm heroku
+```
+Para ver la info remote
+
+```sh
+git remote -v
+```
+
+Y en caso que no pueda hacer un push, da errores, haz un forzado:
+
+```sh
+git push -f heroku master
+```
+
+# Commits / paso a paso
+
 - Creado el fichero .gitgnore para evitar push de directorios como node_modules, .idea (webstorm), etc.
 
 - Definimos la estructura básica del backend del proyecto.
