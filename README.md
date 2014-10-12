@@ -5,7 +5,7 @@ http://stark-wave-6307.herokuapp.com/
 
 ## Instalación
 ```sh
-git clone git@github.com:uodyne/baseMean.git myApp
+git clone git@github.com:uodyne/mean-desde-cero.git myApp
 cd myApp
 npm install & bower install
 ```
