@@ -94,3 +94,5 @@ git push -f heroku master
 
 - Cambiamos estructura de AngularJS, ya que en lugar de separar por controladores, vistas, etc. lo haremos por applicaciones. Eso se hará cuando el proyecto sea grande, en caso de ser pequeño se dejará así.
 
+- Comenzamos añadiendo más componentes de AngularJS, como angular-route y angular-route-segmente para definir la estructura de rutas de la app.
+
