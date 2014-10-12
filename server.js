@@ -1,6 +1,6 @@
 // Dependencias
-var express = require('express');
-var mongoose = require('mongoose');
+var express     = require('express');
+var mongoose    = require('mongoose');
 
 // Configuraciones
 var db = require('./config/db');
@@ -9,7 +9,9 @@ var db = require('./config/db');
 mongoose.connect(db.url);
 
 // Servidor Express
-var app = express();
+var app     = express();
+var port    = process.env.PORT || 3000;
+
 // Configuración App
 app.configure(function() {
     // Zona pública
@@ -29,4 +31,4 @@ require('./app/routes/api')(app);
 require('./app/routes/routes')(app);
 
 // Iniciamos servidor en puerto 3000
-app.listen(3000);
+app.listen(port);
