@@ -9,6 +9,6 @@ module.exports = function(app) {
 
     // Enrutar todo a INDEX principal de la app
     app.get('*', function(req, res) {
-        res.sendfile('public/views/index.html');
+        res.sendfile('public/_system/views/index.html');
     });
 }

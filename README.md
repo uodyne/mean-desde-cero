@@ -43,3 +43,5 @@
 
 - Damos formato frontend con Bootstrap de base.
 
+- Cambiamos estructura de AngularJS, ya que en lugar de separar por controladores, vistas, etc. lo haremos por applicaciones. Eso se hará cuando el proyecto sea grande, en caso de ser pequeño se dejará así.
+

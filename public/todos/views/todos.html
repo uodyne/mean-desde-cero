@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html ng-app="app">
-<head>
-    <meta charset="utf-8">
 
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-
-    <script src="../components/angular/angular.min.js"></script>
-    <script type="text/javascript" src="../controllers/app.js"></script>
-</head>
-<body ng-controller="mainCtrl">
-<div class="container">
+<div class="container"  ng-controller="todoCtrl">
     <div class="jumbotron text-center">
         <h1>Tareas <span class="label label-info">{{ models.length }}</span></h1>
     </div>
@@ -56,5 +45,3 @@
         </div>
     </div>
 </div>
-</body>
-</html>
