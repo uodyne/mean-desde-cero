@@ -10,10 +10,28 @@
     <script src="/components/angular-route/angular-route.min.js"></script>
     <script src="/components/angular-animate/angular-animate.min.js"></script>
     <script src="/components/angular-route-segment/build/angular-route-segment.js"></script>
+
     <script type="text/javascript" src="/_system/controllers/app.js"></script>
-    <script type="text/javascript" src="/todos/controllers/app.js"></script>
+    <script type="text/javascript" src="/_system/routes/routes.js"></script>
+    <script type="text/javascript" src="/todos/controllers/todos.js"></script>
+
 </head>
 <body ng-controller="mainCtrl">
+
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav">
+                    <li ng-class="{active: ('home' | routeSegmentStartsWith)}">
+                        <a href="#{{'home' | routeSegmentUrl}}">Home</a>
+                    </li>
+                    <li ng-class="{active: ('todos' | routeSegmentStartsWith)}">
+                        <a href="#{{'todos' | routeSegmentUrl}}">Todos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <div class="container" id="content" app-view-segment="0"></div>
 

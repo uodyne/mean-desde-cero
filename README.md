@@ -96,3 +96,4 @@ git push -f heroku master
 
 - Comenzamos añadiendo más componentes de AngularJS, como angular-route y angular-route-segmente para definir la estructura de rutas de la app.
 
+- Montamos Route de Home y ToDos (tareas)
